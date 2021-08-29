@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #bdc3c7;
+}
+
+body div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+body div div.titre {
+    background-color:#1abc9c;
+    width: 25%;
+    margin:20px;
+    border-radius: 40%;
+    box-shadow: 10px 10px 20px 5px #656565;
+}
+
+body div div.texte {
+    width: 50%;
+    margin:25px;
+
+}
+textarea {
+    margin: 15px;
+}
+input {
+    width:50%;
+    height: 40px;
+    box-shadow: 10px 10px 20px 5px #656565;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelles ventes</title>
+    <link rel="stylesheet" href="nouvellesVentes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nouvelles ventes</h1>
+        </header>
+        <section>
+            <div>
+                <form action="" name="form" class="form">
+                    <fieldset>
+                        <legend>Nom du fichier</legend>
+                        <input type="text" name="Nom de l'oeuvre" class="name"> Entrez le nom de l'oeuvre
+                    </fieldset>
+                    <fieldset>
+                        <legend>Recherche du fichier</legend>
+                        <input type="file" name="Recherche de l'oeuvre" class="recherche">
+                    </fieldset>
+                    <fieldset class="choix" id="choix">
+                        <legend>Formats</legend>
+                        <input type="checkbox" class="classique" id="classique"> <p>Classique</p>
+                        <input type="checkbox" class="grand" id="grand"> <p>Grand</p>
+                        <input type="checkbox" class="geant" id="geant"> <p>Géant</p>
+                        <input type="checkbox" class="collector" id="collector"> <p>Collector</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Nombre de tirages</legend>
+                        <input type="text" name="nb max de tirages" class="tirage"> Entrez le nombre maximum de tirages (1-1000)
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tags</legend>
+                        <input type="text" name="tags" class="tags" id="vt"> Entrez les tags un par un 
+                        <button type="button" class="validationTag"  name="validerTags"> Valider un tag </button>
+                    </fieldset>
+                    <button type="button" class="validationFinale" id="vf" onclick=verifier();>Validation finale</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        function verifier(){
+            let y = 0;
+            for (i=0; i<document.getElementsByTagName('input').length; i++){
+                if (document.getElementsByTagName('input')[i].value==="" && document.getElementsByTagName('input')[i] != document.getElementById('vt')){
+                    document.getElementsByTagName('input')[i].style.border = " solid red 2px";
+                }
+                else {
+                    document.getElementsByTagName('input')[i].style.border = " solid green 2px";
+                    y++;
+                }
+            }
+            if(y==8){
+                if(document.getElementById('classique').checked || document.getElementById('grand').checked || document.getElementById('geant').checked || document.getElementById('collector').checked){
+                    document.getElementById('vf').type = "submit";
+                }
+                else{
+                    document.getElementById('vf').type = "button";
+                    alert("Des informations sont manquantes");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

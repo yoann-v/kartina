@@ -1,0 +1,74 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body div.container {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+  }
+  body div.container div.form {
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    min-width: 700px;
+    padding: 5%;
+  }
+  body div.container div.form form.inscription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  body div.container div.form form.inscription fieldset {
+    position: relative;
+    display: inline-flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    min-width: 660px;
+  }
+  body div.container div.form form.inscription fieldset legend {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+  body div.container div.form form.inscription fieldset input {
+    height: 30px;
+    width: 50%;
+    min-width: 180px;
+    margin-right: 30px;
+  }
+
+  body div.container div.form form.inscription fieldset.probleme {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+
+  body div.container div.form form.inscription fieldset.probleme div {
+    margin:15px 0;
+    width: 100%;
+
+  }
+  body div.container div.form form.inscription fieldset.probleme div select {
+    width: 45%;
+    min-width: 55px;
+    height: 36px;
+    margin-right: 30px;
+  }
+  body div.container div.form button {
+    height: 60px;
+    width: 30%;
+    margin: auto;
+    border: 3px solid black;
+    background-color: #e22b2b;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    justify-content: end;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

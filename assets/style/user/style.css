@@ -1,0 +1,186 @@
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blanchedalmond;
+  margin: 0;
+  justify-content: center;
+  box-sizing: border-box;
+}
+body .container {
+  display: flex;
+  width: 80%;
+  left: 200px;
+}
+body .container nav {
+  width: 350px;
+  height: min-content;
+  margin-top: 20px;
+  z-index: 10;
+}
+body .container nav > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  box-shadow: -7px 7px 5px #777373;
+}
+body .container nav > div > div {
+  display: flex;
+  justify-content: right;
+}
+body .container nav > div > div p {
+  font-size: 0.8em;
+  text-align: left;
+}
+body .container nav > div:nth-child(1) {
+  z-index: 10;
+  margin-bottom: 20px;
+}
+body .container nav > div:nth-child(2) {
+  background-color: silver;
+  z-index: -1;
+}
+body .container nav > div h3 {
+  margin-left: 10px;
+  padding: 0;
+}
+body .container nav > div p {
+  margin: 10px 15px;
+}
+body .container section {
+  width: 60%;
+  margin: 20px 20px 20px 0;
+  box-shadow: -7px 10px 5px #777373;
+  background-color: white;
+  padding: 30px;
+  z-index: 8;
+  position: relative;
+}
+body .container section article {
+  width: 100%;
+  height: min-content;
+  min-height: 400px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body .container section article h2 {
+  height: 60px;
+  border-bottom: 2px solid black;
+}
+body .container section article.user {
+  display: none;
+}
+body .container section article.changeData {
+  display: flex;
+}
+body .container section article.changeData > div {
+  display: flex;
+  flex-direction: column;
+}
+body .container section article.changeData > div.formUser form {
+  margin: 20px;
+}
+body .container section article.changeData > div.formUser form fieldset {
+  margin: 20px 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+body .container section article.changeData > div.formUser form fieldset legend {
+  font-size: 1.3em;
+}
+body .container section article.changeData > div.formUser form fieldset input {
+  width: 45%;
+  height: 40px;
+  margin: 10px;
+  padding: 5px;
+}
+body .container section article.changeData > div.formUser form button {
+  height: 40px;
+  width: 40%;
+  margin: auto;
+  border: 3px solid black;
+  background-color: #e22b2b;
+  color: white;
+  font-size: 1em;
+}
+body .container section article.changeData > div.formUser form button:hover {
+  cursor: pointer;
+}
+body .container section article.changeData > div.formAdress {
+  box-sizing: border-box;
+}
+body .container section article.changeData > div.formAdress form {
+  margin: 20px;
+}
+body .container section article.changeData > div.formAdress form fieldset {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  height: 150px;
+  position: relative;
+}
+body .container section article.changeData > div.formAdress form fieldset legend {
+  font-size: 1.3em;
+}
+body .container section article.changeData > div.formAdress form fieldset div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  margin: 20px;
+}
+body .container section article.changeData > div.formAdress form fieldset div input {
+  width: 95%;
+  min-height: 30px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+body .container section article.changeData > div.formAdress form fieldset div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: auto;
+  width: 96%;
+  z-index: 10;
+  background-color: white;
+}
+body .container section article.changeData > div.formAdress form fieldset div ul li {
+  padding: 10px 0;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+body .container section article.changeData > div.formAdress form fieldset div ul li:hover {
+  background-color: #f0f0f0;
+  border-left: 5px solid skyblue;
+  cursor: pointer;
+}
+body .container section article.changeData > div.formAdress form button {
+  height: 40px;
+  width: 40%;
+  margin: auto;
+  border: 3px solid black;
+  background-color: #e22b2b;
+  color: white;
+  font-size: 1em;
+}
+body .container section article.changeData > div.formAdress form button:hover {
+  cursor: pointer;
+}
+body .container section article.shop {
+  display: none;
+}
+body .container section article.changePayment {
+  display: none;
+}
+body .container section article h1 {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

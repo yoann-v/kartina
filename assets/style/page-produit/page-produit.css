@@ -1,0 +1,275 @@
+body .container section.page-produit .bloc1 {
+  display: flex;
+  margin: 50px 20px;
+}
+body .container section.page-produit .bloc1 .carousel {
+  display: flex;
+  width: 60%;
+}
+body .container section.page-produit .bloc1 .carousel .miniature {
+  width: 70%;
+}
+body .container section.page-produit .bloc1 .carousel .miniature > input {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+body .container section.page-produit .bloc1 .carousel .miniature > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -100%;
+}
+body .container section.page-produit .bloc1 .carousel .miniature > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: 0%;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide figure {
+  display: flex;
+  margin: 0;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide figure > div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide figure > div:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 66.6666666667%;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide figure > div > img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide figure img {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide div.display-picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 100px;
+}
+body .container section.page-produit .bloc1 .carousel .carousel__slide.scrollable {
+  overflow-y: scroll;
+}
+body .container section.page-produit .bloc1 .slide {
+  width: 15%;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails {
+  padding-left: 0px;
+  padding-right: 20px;
+  list-style: none;
+}
+.carousel__slides + body .container section.page-produit .bloc1 .slide .carousel__thumbnails {
+  margin-top: 20px;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails li {
+  flex: 1 1 auto;
+  margin: 10px;
+  transition: all 300ms ease-in-out;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label {
+  display: block;
+  position: relative;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label input[type=radio]:checked + label {
+  color: #d6b337;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label > img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:hover, body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+  box-shadow: 0px 0px 0px 5px rgba(214, 178, 55, 0.5);
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+  box-shadow: 0px 0px 0px 5px rgba(214, 178, 55, 0.5);
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:focus {
+  cursor: pointer;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails label:focus img {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+}
+body .container section.page-produit .bloc1 .slide .carousel__thumbnails img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .container section.page-produit .bloc1 .personnalisation {
+  width: 40%;
+}
+body .container section.page-produit .bloc1 .personnalisation .title {
+  text-align: center;
+  font-weight: bold;
+}
+body .container section.page-produit .bloc1 .personnalisation hr {
+  text-align: center;
+  width: 30%;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection_titre {
+  display: flex;
+  text-align: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection_titre div {
+  width: calc(100% / 3);
+  border-bottom: 4px solid transparent;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection_titre div img {
+  width: 50px;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection_titre div p {
+  margin: 0;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection_titre div:nth-child(1) {
+  border-bottom: 4px solid black;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection {
+  margin-top: 20px;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div {
+  display: none;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul {
+  margin: 0;
+  padding: 0;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul li {
+  list-style: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul li input {
+  display: none;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul li label {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  height: 30px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul li img {
+  height: 100px;
+  margin: 10px 20px;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div ul li input[type=radio]:checked ~ label {
+  background-color: #d6b337;
+}
+body .container section.page-produit .bloc1 .personnalisation .selection div.format {
+  display: block;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_etape {
+  display: none;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_etape a {
+  text-decoration: none;
+  color: black;
+}
+body .container section.page-produit .bloc1 .personnalisation .total_prix {
+  margin-left: 50%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+body .container section.page-produit .bloc1 .personnalisation .total_prix .total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body .container section.page-produit .bloc1 .personnalisation .total_prix .prix {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_format {
+  display: block;
+  padding: 15px;
+  background-color: #a6070f;
+  text-align: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_format a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_finition {
+  display: none;
+  padding: 15px;
+  background-color: #a6070f;
+  text-align: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_finition a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_cadre {
+  display: none;
+  padding: 15px;
+  background-color: #a6070f;
+  text-align: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_cadre a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_panier {
+  display: none;
+  padding: 15px;
+  background-color: #a6070f;
+  text-align: center;
+}
+body .container section.page-produit .bloc1 .personnalisation .lien_validation .lien_panier a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+
+/*# sourceMappingURL=page-produit.css.map */

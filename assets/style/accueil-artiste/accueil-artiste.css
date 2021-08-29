@@ -1,0 +1,142 @@
+body .container section.accueil-artiste div.bandeau-titre-artiste {
+  position: relative;
+  height: 460px;
+  background-color: black;
+}
+body .container section.accueil-artiste div.bandeau-titre-artiste .title {
+  position: relative;
+  z-index: 1;
+  margin-left: 10%;
+  height: 460px;
+  vertical-align: text-top;
+}
+body .container section.accueil-artiste div.bandeau-titre-artiste .title h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  margin: 0;
+}
+body .container section.accueil-artiste div.bandeau-titre-artiste .title p {
+  color: white;
+  font-size: 1.25rem;
+  max-width: 400px;
+}
+body .container section.accueil-artiste div.bandeau-titre-artiste .image {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body .container section.accueil-artiste div.title2 {
+  margin: 5% 0% 5% 0%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body .container section.accueil-artiste div.title2 h2 {
+  color: white;
+  background-color: #a18400;
+  padding: 10px;
+}
+body .container section.accueil-artiste div.artistes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 5% 0 5%;
+}
+body .container section.accueil-artiste div.artistes div.artiste {
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  margin: 1%;
+  align-items: center;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo {
+  display: flex;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.nom {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.nom h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.nom div.btn {
+  text-align: center;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.nom div.btn a {
+  border: 2px solid #d6b337;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 16px 50px 13px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.photo {
+  width: 50%;
+  height: 200px;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.nom-photo div.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.photo-group {
+  display: flex;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.photo-group div.photo-multi {
+  width: 100%;
+  height: 200px;
+}
+body .container section.accueil-artiste div.artistes div.artiste div.photo-group div.photo-multi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .container section.accueil-artiste div.full-artistes {
+  background-color: black;
+}
+body .container section.accueil-artiste div.full-artistes div.title {
+  margin: 4% 0% 2% 10%;
+  color: white;
+  font-size: 2rem;
+}
+body .container section.accueil-artiste div.full-artistes div.title h3 {
+  margin: 0;
+}
+body .container section.accueil-artiste div.full-artistes div.alphabetic {
+  display: flex;
+  margin: 0% 0% 4% 10%;
+}
+body .container section.accueil-artiste div.full-artistes div.alphabetic div.alphabetic-letter {
+  width: 5%;
+}
+body .container section.accueil-artiste div.full-artistes div.alphabetic div.alphabetic-letter a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+body .container section.accueil-artiste div.artistes div.letter {
+  width: 45%;
+  height: 100%;
+  margin: 1%;
+}
+body .container section.accueil-artiste div.artistes div.letter h1 {
+  margin: 1%;
+  text-transform: uppercase;
+  font-size: 300px;
+  text-align: center;
+  color: #d6b337;
+}
+
+/*# sourceMappingURL=accueil-artiste.css.map */

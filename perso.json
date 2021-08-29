@@ -1,0 +1,93 @@
+{
+  "format": {
+   "collector":{
+    "finition": {
+      "3": {
+        "cadre": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "4": {
+        "cadre": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "5":"Cadre non disponible"
+    }
+   },
+    "géant": {
+      "finition": {
+        "3": {
+          "cadre": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "4": {
+          "cadre": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "5":"Cadre non disponible"
+      }
+    },
+    "grand": {
+      "finition": {
+        "3": {
+          "cadre": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "4": {
+          "cadre": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "5":"Cadre non disponible"
+      }
+    },
+    "classique": {
+      "finition": {
+        "1": {
+          "cadre": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "2": {
+          "cadre": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    }
+  }
+}

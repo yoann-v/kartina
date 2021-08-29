@@ -1,0 +1,182 @@
+@import "../colors";
+
+body{
+    .container{
+        section{
+            &.accueil-artiste{
+                div.bandeau-titre-artiste{
+                    position: relative;
+                    height: 460px;
+                    background-color: black;
+
+                    .title{
+                        position: relative;
+                        z-index: 1;
+                        margin-left: 10%;
+                        height: 460px;
+                        vertical-align: text-top;  
+
+                        h1{
+                            color: white;
+                            font-weight: bold;
+                            font-size: 5rem;
+                            margin: 0;
+                        }
+
+                        p{
+                            color: white;
+                            font-size: 1.25rem;
+                            max-width: 400px;
+                        }    
+                    }
+
+                    .image{
+                        text-align: right;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+
+                div.title2{
+                    margin: 5% 0% 5% 0%;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    //width: 500px;
+                    text-align: center;
+                    h2{
+                        color: white;
+                        background-color: $secondary-dark;
+                        padding: 10px;
+                    }
+                }
+
+                div.artistes{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin: 0 5% 0 5%;
+
+                    div.artiste{
+                        width: 45%;
+                        height: 100%;
+                        background-color: white;
+                        //border: 2px black solid;
+                        margin: 1%;
+                        align-items: center;
+                        
+                        div.nom-photo{
+                            display: flex;
+
+                            div.nom{
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                height: 50%;
+
+                                h3{
+                                    text-align: center;
+                                    margin-bottom: 50px;
+                                    text-transform: uppercase;
+                                    font-size: 25px;
+                                    font-weight: bold;
+                                }
+
+                                div.btn{
+                                    text-align: center;
+                                    
+                                    a{
+                                        
+                                        border: 2px solid $secondary-color;
+                                        background-color: white;
+                                        color: black;
+                                        text-decoration: none;
+                                        padding: 16px 50px 13px 50px;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        display: inline-block;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            div.photo{
+                                width: 50%;
+                                height: 200px;
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    
+                                }
+                            }
+                        }
+
+                        div.photo-group{
+                            display: flex;
+
+                            div.photo-multi{
+                                width: 100%;
+                                height: 200px;
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                            }
+                            }
+                        }
+                    }
+                }
+
+                div.full-artistes{
+                    background-color: black;
+                    //padding-top: 5px;
+                    div.title{
+                        //margin-left: 10%;
+                        margin: 4% 0% 2% 10%;
+                        color: white;
+                        font-size: 2rem;
+                        h3{
+                            margin: 0;
+                        }
+                    }
+                    div.alphabetic{
+                        display: flex;
+                        //margin-left: 10%;
+                        margin: 0% 0% 4% 10%;
+
+                        div.alphabetic-letter{
+                            width: 5%;
+                            a{
+                                
+                                color: white;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font-size: 1.6rem;
+
+                            }
+
+                        }
+                    }
+                }
+
+                div.artistes{
+                    div.letter{
+                        width: 45%;
+                        height: 100%;
+                        margin: 1%;
+                        h1{
+                            margin: 1%;
+                            text-transform: uppercase;
+                            font-size: 300px;
+                            text-align: center;
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

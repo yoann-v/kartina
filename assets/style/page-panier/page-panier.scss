@@ -1,0 +1,282 @@
+@import "../colors";
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.container{
+    background-color: #f1efef;
+    section.page-panier{
+        height: 100%;
+        div.title{
+            margin: 5% 0% 5% 0%;
+            font-weight: bold;
+            font-size: 1.5rem;
+            //width: 300px;
+            text-align: center;
+            h1{
+                color: white;
+                background-color: $secondary-dark;
+                padding: 10px;
+            }
+        }
+        div.panierVide{
+            h2{
+                border: 2px solid $secondary-dark;
+                width: 70%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 15px;
+                
+                p{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+        #description{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: white;
+            .photo{
+                img{
+                    width: 100px;
+                }
+            }
+            .artiste{
+                width: 250px;
+                .artist-name{
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                }
+                .produit-name{
+                    color: #656363;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    overflow-wrap: break-word;
+                }
+
+                .ed-limite{
+                    font-size: 0.8rem;
+                }
+            }
+            .caracteristique{
+
+                .format{
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                }
+
+                .f-detail{
+                    color: #656363;
+                    font-size: 0.8rem;
+                }
+
+                .finition{
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                }
+
+                .fi-detail{
+                    color: #656363;
+                    font-size: 0.8rem;
+                }
+
+                .cadre{
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                }
+
+                .c-detail{
+                    color: #656363;
+                    font-size: 0.8rem;
+                }
+
+            }
+
+            .quantite{
+                .title{
+                    font-weight: bold;
+                }
+                input{
+                    width: 55px;
+                }
+                #delete{
+                    a{
+                        text-decoration: none;
+                        color: #656363;
+                        .icone_x{
+                            font-weight: 700;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .prix{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+
+        .lien_code{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2px;
+
+            .lien-achat{
+                margin-top: 10px;
+                
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    margin-left: 15px;
+                }
+            }
+            .code_promo{
+                margin-right: 15px;
+                width: 30%;
+                background-color: white;
+                padding: 10px;
+                .form{
+                    form{
+                        label{
+                            color: #656363;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        .total{
+            display: flex;
+            justify-content: flex-end;
+
+            .total_group{
+                display: flex;
+                justify-content: space-between;
+                width: 30%;
+                margin-right: 15px;
+                margin-top: 2px;
+                padding: 10px;
+                background-color: white;
+
+                .titre_total{
+                    text-transform: capitalize; 
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+                .prix_tva{
+                    
+                    .prix{
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        text-align: right;
+                    }
+                    .tva{
+                        font-size: 0.7rem;
+                    }
+                }
+
+            }
+        }
+        .lien_valider{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 35px;
+            margin-right: 15px;
+            
+            a{
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: white;
+                background-color: #d63031;
+                width: 30%;
+                padding: 10px;
+            }
+        }
+
+        .paiement_secure{
+            display: flex;
+            justify-content: flex-end;
+            height: auto;
+            margin-top: 15px;
+            margin-right: 15px;
+            
+            .titre_secure{
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                
+                color: #808080;
+                
+                .icone_cadenna{
+
+                    img{
+                        width: 13px;
+                        margin-left: 4px;
+                        
+                    }
+                }
+            }
+        }
+
+        .icone_secure{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 15px;
+
+            .icone_paiement{
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                filter: grayscale(1);
+                
+                .cb-icone{
+                    width: 35px;
+                    margin: 7px;
+                    margin-top: 9px;
+                }
+
+                .paypal-icone{
+                    width: 70px;
+                    margin: 7px;
+                    margin-top: 14px;
+
+                    
+                }
+
+                .visa-icone{
+                    width: 50px;
+                    margin: 7px;
+                    margin-top: 14px;
+                }
+
+                .mc-icone{
+                    width: 40px;
+                    margin: 7px;
+                }
+
+                .ae-icone{
+                    width: 50px;
+                    margin: 7px;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,1 @@
+Faire un script pour générer les différents thèmes, orientation, etc pour la bdd OU trouver un moyen d'importer la bdd dans le git.

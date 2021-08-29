@@ -1,0 +1,340 @@
+body .container section.shop {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  background-color: #57576a;
+}
+body .container section.shop > div.navbar {
+  background-color: white;
+  width: 23%;
+  margin: 0 20px;
+  padding: 0;
+  height: min-content;
+  box-shadow: 5px 5px 10px grey;
+}
+body .container section.shop > div.navbar h2 {
+  text-align: center;
+}
+body .container section.shop > div.navbar form.filtrage > div {
+  margin: 10px 0;
+}
+body .container section.shop > div.navbar form.filtrage > div h3 {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+body .container section.shop > div.navbar form.filtrage > div h3:hover {
+  background-color: #d6b337;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) {
+  display: none;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul li {
+  padding: 10px;
+  border-left: 8px solid transparent;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul li:hover {
+  color: #000000;
+  font-weight: 600;
+  border-left: 8px solid #d6b337;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul li input {
+  appearance: none;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul li label {
+  cursor: pointer;
+}
+body .container section.shop > div.navbar form.filtrage > div > div:nth-child(2) ul li input[type=radio]:checked + label {
+  font-weight: bold;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-format ul {
+  display: flex;
+  flex-direction: column;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-format ul li {
+  display: flex;
+  align-items: center;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-orientation .orient {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-orientation .orient figure {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100px;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-orientation .orient figure:hover {
+  background-color: #dad9d8;
+  font-weight: 700;
+}
+body .container section.shop > div.navbar form.filtrage > div.div-orientation .orient figure figcaption {
+  padding: 5px;
+}
+body .container section.shop > div.catalogue {
+  display: flex;
+  width: 70%;
+  padding: 27px;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 5px 5px 10px grey;
+  margin: 0 30px 30px 20px;
+}
+body .container section.shop > div.catalogue div.filtre {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body .container section.shop > div.catalogue div.filtre > button {
+  display: inline-flex;
+  background-color: #d6b337;
+  margin: 0 5px;
+  padding: 5px 10px;
+  width: 150px;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 2px 10px grey;
+  cursor: pointer;
+}
+body .container section.shop > div.catalogue div.filtre > button :nth-child(2) {
+  font-weight: bold;
+}
+body .container section.shop > div.catalogue div.tri {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .container section.shop > div.catalogue div.tri > div {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 500px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+body .container section.shop > div.catalogue div.loader {
+  position: relative;
+  width: 12em;
+  height: 12em;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  border-radius: 50%;
+  margin: 40px;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s ease-in-out infinite;
+}
+body .container section.shop > div.catalogue div.loader > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin: -15px;
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(6em) rotate(0deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(2) {
+  transform: rotate(36deg) translate(6em) rotate(-36deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(3) {
+  transform: rotate(72deg) translate(6em) rotate(-72deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(4) {
+  transform: rotate(108deg) translate(6em) rotate(-108deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(5) {
+  transform: rotate(144deg) translate(6em) rotate(-144deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(6) {
+  transform: rotate(180deg) translate(6em) rotate(-180deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(7) {
+  transform: rotate(216deg) translate(6em) rotate(-216deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(8) {
+  transform: rotate(252deg) translate(6em) rotate(-252deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(9) {
+  transform: rotate(288deg) translate(6em) rotate(-288deg);
+}
+body .container section.shop > div.catalogue div.loader > *:nth-of-type(10) {
+  transform: rotate(324deg) translate(6em) rotate(-324deg);
+}
+body .container section.shop > div.catalogue div.loader div {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.15s;
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(1) {
+  filter: invert(10%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(2) {
+  filter: invert(20%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(3) {
+  filter: invert(30%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(4) {
+  filter: invert(40%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(5) {
+  filter: invert(50%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(6) {
+  filter: invert(60%);
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(7) {
+  filter: invert(70%);
+  height: 20px;
+  width: 20px;
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(8) {
+  filter: invert(80%);
+  height: 20px;
+  width: 20px;
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(9) {
+  filter: invert(90%);
+  height: 18px;
+  width: 18px;
+}
+body .container section.shop > div.catalogue div.loader div:nth-child(10) {
+  filter: invert(95%);
+  height: 15px;
+  width: 15px;
+}
+body .container section.shop > div.catalogue div.photographies {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .container section.shop > div.catalogue div.photographies article {
+  display: flex;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+body .container section.shop > div.catalogue div.photographies article figure {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+}
+body .container section.shop > div.catalogue div.photographies article figure div {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  object-fit: contain;
+  height: 80%;
+  max-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+body .container section.shop > div.catalogue div.photographies article figure div a {
+  display: flex;
+  height: 100%;
+}
+body .container section.shop > div.catalogue div.photographies article figure div a img {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20%;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(1) {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(1) p {
+  width: 100%;
+  margin: 0;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(1) p span {
+  display: inline-flex;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(1) p span a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(1) p span a:hover {
+  text-decoration: underline;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(2) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(2) span {
+  display: flex;
+  justify-content: right;
+}
+body .container section.shop > div.catalogue div.photographies article figure figcaption > div div:nth-child(2) span:nth-child(2) {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=catalogue.css.map */

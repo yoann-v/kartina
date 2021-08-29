@@ -1,0 +1,17 @@
+body .container section.cgu div.title {
+  margin: 5% 0% 5% 0%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body .container section.cgu div.title h1 {
+  color: white;
+  background-color: #a18400;
+  padding: 10px;
+}
+body .container section.cgu div.detail-cgu {
+  width: 80%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=cgu.css.map */

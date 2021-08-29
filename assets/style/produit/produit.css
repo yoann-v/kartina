@@ -1,0 +1,261 @@
+body .container section.produit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+body .container section.produit article {
+  width: 90%;
+}
+body .container section.produit article.display h1 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 2.3em;
+}
+body .container section.produit article.display div.view {
+  display: flex;
+}
+body .container section.produit article.display div.view > div {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+body .container section.produit article.display div.view > div.carousel {
+  width: 50%;
+}
+body .container section.produit article.display div.view > div.carousel div.miniatures {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+body .container section.produit article.display div.view > div.carousel div.miniatures input {
+  display: none;
+}
+body .container section.produit article.display div.view > div.carousel div.miniatures label img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 6px solid transparent;
+}
+body .container section.produit article.display div.view > div.carousel div.miniatures input[type=radio]:checked + label > img {
+  border-color: #d6b337;
+}
+body .container section.produit article.display div.view > div.carousel div.display-carousel {
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+}
+body .container section.produit article.display div.view > div.carousel div.display-carousel div {
+  display: flex;
+}
+body .container section.produit article.display div.view > div.carousel div.display-carousel div.slide {
+  transition: 500ms ease-in-out;
+  max-height: 450px;
+  min-width: 100%;
+  justify-content: center;
+}
+body .container section.produit article.display div.view > div.carousel div.display-carousel div.slide img {
+  object-fit: contain;
+}
+body .container section.produit article.display div.view > div.personnalisation {
+  width: 50%;
+  flex-direction: column;
+}
+body .container section.produit article.display div.view > div.personnalisation h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection {
+  margin-top: 20px;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre {
+  display: flex;
+  flex-direction: row;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre:hover {
+  cursor: pointer;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+  border-bottom: 4px solid transparent;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre div img {
+  width: 50px;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre div h3 {
+  margin: 0;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.titre div:nth-child(1) {
+  border-bottom: 4px solid black;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.previous div {
+  background-color: #a18400;
+  width: 50%;
+  padding: 5px;
+  display: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.total {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.total .prix {
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.total .prix div {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.check div {
+  background-color: #a18400;
+  padding: 5px;
+  display: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  justify-content: center;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.check div:nth-child(1) {
+  display: flex;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.check div:nth-last-child(1) {
+  background-color: white;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection div.step div.check div.check-checkout button {
+  border: none;
+  background-color: #a18400;
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1em;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div {
+  display: none;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul {
+  list-style: none;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul li input {
+  display: none;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul li img {
+  height: 90px;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul li label {
+  margin: 0 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div ul li input[type=radio]:checked ~ label {
+  background-color: #d6b337;
+  padding: 5px;
+}
+body .container section.produit article.display div.view > div.personnalisation div.selection form .select div:nth-child(1) {
+  display: block;
+}
+body .container section.produit article.description {
+  padding-bottom: 40px;
+}
+body .container section.produit article.description h2 {
+  font-size: 2.3em;
+  font-variant: small-caps;
+  color: rgba(0, 0, 0, 0.3);
+}
+body .container section.produit article.description div.info-stock {
+  border: rgba(0, 0, 0, 0.3) 1px solid;
+}
+body .container section.produit article.description div.info-stock h3 {
+  margin: 20px;
+  font-size: 2em;
+  font-variant: small-caps;
+}
+body .container section.produit article.description div.info-stock > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container section.produit article.description div.info-stock > div div.infos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock {
+  display: inline-flex;
+  margin: 20px;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-content: space-around;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div h4 {
+  margin: 0;
+  font-size: 1.7em;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div {
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: flex-end;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div.bar {
+  width: 60%;
+  height: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div.bar > div.red {
+  background-color: red;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div.bar > div.green {
+  background-color: green;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div.bar > div.orange {
+  background-color: orange;
+}
+body .container section.produit article.description div.info-stock > div div.infos div.format-stock div.stock div.bar > div.dark-red {
+  background-color: darkred;
+}
+body .container section.produit article.description div.info-stock > div div.image {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+body .container section.produit article.description div.info-stock > div div.image img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=produit.css.map */

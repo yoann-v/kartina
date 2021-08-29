@@ -1,0 +1,36 @@
+legend {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+table {
+    border:0;
+    width: 100%;
+    border:1px black solid;
+}
+tr {
+    background-color: rgb(0, 0, 0);
+    color:rgb(223, 223, 223);
+    border:0;
+    height : 30px;
+}
+
+th {
+    padding: 5px;
+     border: 0;
+}
+
+td {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0) ; 
+    border:0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+img {
+    width: 100px;
+}

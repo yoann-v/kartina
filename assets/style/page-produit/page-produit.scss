@@ -1,0 +1,309 @@
+@import "../colors";
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: ($height / $width) * 100%;
+    }
+    > img {
+          position: absolute;
+          bottom: 0;
+          height: 100%;
+    }
+}
+
+body{
+    .container{
+        section{
+            &.page-produit{
+                .bloc1{
+                    display: flex;  
+                    margin: 50px 20px;
+                    .carousel {
+                        display: flex;
+                        width: 60%;
+                        .miniature {
+                            width: 70%;
+
+                            > input {
+                                clip: rect(1px, 1px, 1px, 1px);
+                                clip-path: inset(50%);
+                                height: 1px;
+                                width: 1px;
+                                margin: -1px;
+                                overflow: hidden;
+                                padding: 0;
+                                position: absolute;
+                                
+                                &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -100%; }
+                                &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
+                            }
+                        }
+                        
+                        .carousel__slides {
+                            position: relative;
+                            z-index: 1;
+                            padding: 0;
+                            margin: 0;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            box-sizing: border-box;
+                            display: flex;
+                        }
+                        
+                        .carousel__slide {
+                            position: relative;
+                            display: block;
+                            flex: 1 0 100%;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            transition: all 300ms ease-out;
+                            box-sizing: border-box;
+                            white-space: normal;
+                            
+                            figure {
+                                display: flex;
+                                margin: 0;
+                                
+                                >div {
+                                    @include aspect-ratio(3, 2);
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                img {
+                                    position: relative;
+                                    display: block;
+                                    flex: 1 1 auto;
+                                    object-fit: cover;
+
+                                }
+                            }
+                            div{
+                                &.display-picture{
+                                    display: flex;
+                                    justify-content: center;
+                                    position: relative;
+                                    bottom: 100px;
+                                }
+                            }
+                            
+                            &.scrollable {
+                                overflow-y: scroll;
+                            }
+                        }
+                    }
+                       
+                    .slide {
+                        width: 15%;
+
+                        .carousel__thumbnails {
+                            padding-left: 0px;
+                            padding-right: 20px;
+                            list-style: none;
+    
+                            .carousel__slides + & {
+                                margin-top: 20px;
+                            }
+                            
+                            li {        
+                                flex: 1 1 auto;
+                                margin: 10px;
+                                transition: all 300ms ease-in-out; 
+                            }
+                            
+                            label {
+
+                                input[type="radio"]:checked+label {
+                                   color: $secondary-color;
+                                }
+                                display: block;
+                                @include aspect-ratio(1,1);
+                                
+                                &:hover,
+                                &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px rgba(214,178,55,0.5); }
+                                &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px rgba(214,178,55,0.5); }
+                                
+                                &:focus {
+                                    cursor: pointer;
+                                    
+                                    img {
+                                        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
+                                        transition: all 300ms ease-in-out;
+                                    }
+                                }
+                            }
+                            
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                    }
+
+                    .personnalisation{
+                        width: 40%;
+                        .title{
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                        hr{
+                            text-align: center;
+                            width: 30%;
+                        }
+
+                        .selection_titre {
+                            display: flex;
+                            text-align: center;
+                            
+                           div{
+                            width: calc(100% / 3);
+                            img {
+                                width: 50px;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                            border-bottom: 4px solid transparent;
+                            &:nth-child(1){
+                                border-bottom: 4px solid black;
+                            }
+                           }
+                        }
+
+                        .selection {
+                            margin-top: 20px;
+                            div {
+                                display: none;
+                                ul {
+                                    margin: 0;
+                                    padding: 0;
+                                    li {
+                                        list-style: none;
+                                        margin: 10px 0;
+                                        display: flex;
+                                        align-items: center;
+                                        input {
+                                           display: none;
+                                        }
+                                        label {
+                                            display: inline-flex;
+                                            text-transform: uppercase;
+                                            letter-spacing: 2px;
+                                            font-weight: bold;
+                                            height: 30px;
+                                            padding: 0 10px;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        img {
+                                            height: 100px;
+                                            margin: 10px 20px;
+                                        }
+                                        input[type="radio"]:checked~label {
+                                            background-color: $secondary-color;
+                                        }
+                                    }
+                                }
+                                &.format {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .lien_etape{
+                            display: none;
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                        .total_prix{
+                            margin-left: 50%;
+                            text-align: right;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .total{
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                            }
+                            .prix{
+                                font-weight: bold;
+                                font-size: 1.2rem;
+
+                            }
+                        }
+
+                        .lien_validation{
+
+                            .lien_format{
+                                display: block;
+                                padding: 15px;
+                                background-color: #a6070f;
+                                text-align: center;
+                                a{
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    color: white;
+                                    display: block;
+                                    
+                                }
+                            }
+                            .lien_finition{
+                                display: none;
+                                padding: 15px;
+                                background-color: #a6070f;
+                                text-align: center;
+
+                                a{
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    color: white;
+                                    display: block;
+                                    
+                                }
+                            }
+                            .lien_cadre{
+                                display: none;
+                                padding: 15px;
+                                background-color: #a6070f;
+                                text-align: center;
+
+                                a{
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    color: white;
+                                    display: block;
+                                    
+                                }
+                            }
+                            .lien_panier{
+                                display: none;
+                                padding: 15px;
+                                background-color: #a6070f;
+                                text-align: center;
+
+                                a{
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    color: white;
+                                    display: block;
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

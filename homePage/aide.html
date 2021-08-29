@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'aide</title>
+    <link rel="stylesheet" href="aide.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Besoin d'aide ?</h2>
+        <hr>
+
+        <div class="form">
+            <form action="" method="post" class="inscription">
+                <fieldset>
+                    <legend>Nom</legend>
+                    <input type="text" placeholder="Nom" id="firstname" pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ -']+$">
+                    <input type="text" placeholder="Prénom" id="surname" pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ -']+$">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <input type="tel" name="" id="phone" placeholder="Numéro de téléphone" pattern="[0-9]{10}">
+                    <input type="email" name="" id="mail" placeholder="xyz@xyz.com" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$">
+                </fieldset>
+
+                <fieldset class="probleme">
+                    <legend>Probleme rencontré</legend>                    
+                    <div class="sujet">
+                        <select name="probleme" id="pb" >
+                            <option value="">Problème rencontré</option>
+                            <option value="commander">Aide pour commander</option>
+                            <option value="retour">Après-vente, échange et retour</option>
+                            <option value="technique">Problème technique</option>
+                            <option value="autre">Autres sujets</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea maxlength="1000" rows="20" cols="70" placeholder="Inscrivez nous ce qui a posé problème ..." id="probleme"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="button" id="envoi" onClick=surbrillance();>Changement</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function surbrillance() {
+            let i =0;
+            let j=0;
+            for (let  i=0 ; i < 4; i++) {
+                if(document.getElementsByTagName('input')[i].value == "" && (document.getElementsByTagName('input')[i].pattern)) {
+                    document.getElementsByTagName('input')[i].style.border = "red solid 2px";
+                } else {
+                    document.getElementsByTagName('input')[i].style.border = "green solid 2px";
+                    j=j+1;
+                } 
+            }
+            if(document.getElementById("probleme").value==""){
+                alert("Il vous manque a remplir le champ pour expliquer votre probleme");
+                } else {
+                    j=j+1;
+                } 
+
+            if(document.getElementById("pb").value==""){
+                document.getElementById("pb").style.border = "red solid 2px";
+            } else {
+                document.getElementById("pb").style.border = "green solid 2px";
+                    j=j+1;
+                } 
+            console.log(j);
+            if (j==6){
+                document.getElementById("envoi").type = "submit";
+            } else {
+                document.getElementById("envoi").type = "button";
+            }
+        }
+    </script>
+</body>
+</html>
